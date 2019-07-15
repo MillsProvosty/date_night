@@ -2,7 +2,7 @@ require './test/test_helper.rb'
 
 class TestBinarySearchTree < Minitest::Test
   def setup
-    @tree = BinarySearchTree.new(10)
+    @tree = BinarySearchTree.new
   end
 
   def test_binary_tree_exists
@@ -10,16 +10,11 @@ class TestBinarySearchTree < Minitest::Test
   end
 
   def test_tree_has_nil_value_upon_initialization
-    tree = BinarySearchTree.new
-    assert_nil tree.root_value
-  end
-
-  def test_tree_returns_root_value
-    assert_equal 10, @tree.root_value
+    @tree = BinarySearchTree.new
+    assert_nil @tree.root
   end
 
   def test_insert_adds_children_nodes
-    @tree.insert(61, "Bill & Ted's Excellent Adventure")
-    assert_equal 61, @tree.
+    assert_equal 0, @tree.insert(61, "Bill & Ted's Excellent Adventure")
   end
 end

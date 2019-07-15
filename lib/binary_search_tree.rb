@@ -1,8 +1,14 @@
 class BinarySearchTree
-  attr_reader :score,
-              :title
-  def initialize(score = nil, title = nil)
-    @score = score
-    @title = title
+  attr_reader :root
+  def initialize(root = nil)
+    @root = root
+  end
+
+  def insert(score, title)
+    current_node = @root
+    if @root == nil
+      @root = TreeNode.new(score, title)
+    else @root.score >
+
   end
 end
