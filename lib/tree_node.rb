@@ -1,9 +1,11 @@
 class TreeNode
-  attr_reader :value
+  attr_reader :score,
+              :title
   attr_accessor :left,
                 :right
-  def initialize(value, left = nil, right = nil)
-    @value = value
+  def initialize(score, title, left = nil, right = nil)
+    @score = score
+    @title = title
     @left = left
     @right = right
   end
