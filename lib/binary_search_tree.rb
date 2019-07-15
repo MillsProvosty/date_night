@@ -6,19 +6,31 @@ class BinarySearchTree
 
   def insert(score, title)
     current_node = @root
-    binding.pry
     if current_node == nil
       @root = TreeNode.new(score, title)
-      binding.pry
     elsif current_node.score > score
-      insert current_node.left(score, title)
+      current_node.left = TreeNode.new(score, title)
     else
-      insert current_node.right(score, title)
+      current_node.right = TreeNode.new(score, title)
     end
-      return depth(score)
+      # return depth(score)
+  end
+
+  def include?(value)
+    current_node = @root
+    include = false
+    if current_node.score == value
+      include = true
+    elsif current_node.score > value
+      current_node = current_node.right
+    elsif current_node.score < value
+      current_node = current_node.left
+    end
+    return include
   end
 
   def depth_of(score)
-    
+
+    binding.pry
   end
 end
