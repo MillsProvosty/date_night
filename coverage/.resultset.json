@@ -4,17 +4,24 @@
       "/Users/millsprovosty/turing/all_mod_3/classwork/date_night/lib/tree_node.rb": [
         1,
         1,
-        null,
+        1,
         null,
         1,
-        3,
-        3,
-        3,
+        0,
+        0,
+        0,
         null,
+        null
+      ],
+      "/Users/millsprovosty/turing/all_mod_3/classwork/date_night/lib/binary_search_tree.rb": [
+        1,
+        1,
+        1,
+        4,
         null,
         null
       ]
     },
-    "timestamp": 1563204966
+    "timestamp": 1563206255
   }
 }
