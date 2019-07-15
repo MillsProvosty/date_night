@@ -17,4 +17,8 @@ class BinarySearchTree
     end
       return depth(score)
   end
+
+  def depth_of(score)
+    
+  end
 end
