@@ -18,5 +18,8 @@ class TestBinarySearchTree < Minitest::Test
     assert_equal 10, @tree.root_value
   end
 
-  
+  def test_insert_adds_children_nodes
+    @tree.insert(61, "Bill & Ted's Excellent Adventure")
+    assert_equal 61, @tree.
+  end
 end

@@ -1,6 +1,8 @@
 class BinarySearchTree
-  attr_reader :root_value
-  def initialize(root_value = nil)
-    @root_value = root_value
+  attr_reader :score,
+              :title
+  def initialize(score = nil, title = nil)
+    @score = score
+    @title = title
   end
 end

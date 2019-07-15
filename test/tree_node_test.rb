@@ -3,7 +3,7 @@ require './test/test_helper.rb'
 
 class TestTreeNode < Minitest::Test
   def setup
-    @tree_node = TreeNode.new(8, 7, 9)
+    @tree_node = TreeNode.new([61, "Bill & Ted's Excellent Adventure"], [60, "Title1"], [62, "Title2"])
   end
 
   def test_tree_node_exists
