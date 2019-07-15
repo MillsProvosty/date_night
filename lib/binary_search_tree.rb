@@ -29,8 +29,18 @@ class BinarySearchTree
     return include
   end
 
-  def depth_of(score)
-
-    binding.pry
+  def depth_of(value)
+    current_node = @root
+    count = 0
+    if current_node.score == value
+      return count
+    elsif current_node.score > value
+      current_node = current_node.right
+      count += 1
+    elsif current_node.score < value
+      current_node = current_node.left
+      count += 1
+    end
+    return count
   end
 end
