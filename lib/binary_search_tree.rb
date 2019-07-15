@@ -6,9 +6,15 @@ class BinarySearchTree
 
   def insert(score, title)
     current_node = @root
-    if @root == nil
+    binding.pry
+    if current_node == nil
       @root = TreeNode.new(score, title)
-    else @root.score >
-
+      binding.pry
+    elsif current_node.score > score
+      insert current_node.left(score, title)
+    else
+      insert current_node.right(score, title)
+    end
+      return depth(score)
   end
 end
